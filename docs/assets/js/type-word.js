@@ -1,6 +1,6 @@
 // type-word animatin
 let typingElement = document.querySelector(".typing-text");
-let typeArray = ["Developer", "Designer"];
+let typeArray = ["Developer", "Data Scientist","DevOps"];
 let index = 0,
   isAdding = true,
   typeIndex = 0;
