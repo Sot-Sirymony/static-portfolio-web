@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sot Sirymony - Software Developer</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background: radial-gradient(ellipse at center, #0d0d2b 0%, #000000 100%);
+      overflow: hidden;
+      font-family: 'Arial', sans-serif;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3em;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    p {
+      font-size: 1.5em;
+      margin-top: 10px;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 5px #00e6e6, 0 0 10px #00e6e6, 0 0 15px #00ffff;
+      }
+      to {
+        text-shadow: 0 0 10px #1ecbe1, 0 0 20px #1ecbe1, 0 0 25px #00ffff;
+      }
+    }
+
+    .contact-btn {
+      margin-top: 40px;
+      padding: 15px 30px;
+      background: linear-gradient(45deg, #00e6e6, #1ecbe1);
+      color: #000;
+      border: none;
+      border-radius: 30px;
+      font-size: 1.2em;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      animation: pulse 2s infinite;
+    }
+
+    .contact-btn:hover {
+      transform: scale(1.1);
+      background: linear-gradient(45deg, #1ecbe1, #00e6e6);
+    }
+
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 0 0 0 rgba(0, 230, 230, 0.7);
+      }
+      70% {
+        box-shadow: 0 0 0 20px rgba(0, 230, 230, 0);
+      }
+      100% {
+        box-shadow: 0 0 0 0 rgba(0, 230, 230, 0);
+      }
+    }
+
+    .stars {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: transparent url('https://i.imgur.com/ybvA6IC.png') repeat;
+      z-index: -1;
+      animation: moveStars 200s linear infinite;
+    }
+
+    @keyframes moveStars {
+      from {background-position: 0 0;}
+      to {background-position: -10000px 10000px;}
+    }
+  </style>
+</head>
+<body>
+  <div class="stars"></div>
+  <h1>Sot Sirymony</h1>
+  <p>I'm a Software Developer</p>
+  <a href="https://t.me/mony_john" target="_blank">
+    <button class="contact-btn">Contact Me on Telegram</button>
+  </a>
+
+  <script>
+    // Optional JavaScript animation can be added here
+    // Currently just simple static glow & pulse animations handled via CSS
+  </script>
+</body>
+</html>
